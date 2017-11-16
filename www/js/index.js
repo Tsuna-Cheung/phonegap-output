@@ -28,14 +28,13 @@ $(document).on("pagecreate","#pageone",function(){
   });            
 });            
 
-function submitText(){
+/*function submitText(){
     
     var rand = random();
     
     console.log(rand);
     
 	alert(rand);
-    
     
     if(rand) {
          console.log("beeb once");
@@ -47,12 +46,27 @@ function submitText(){
         navigator.notification.beep(2);
         navigator.vibrate(2000);
     }
-    
-
-   
-    
 }
 function random()
 {
     return !Math.round(Math.random());
+}*/
+function submitText(){
+      var rand = random();
+  console.log(rand);
+  var result = words[rand];
+  if(rand<10)
+      {
+          navigator.notification.beep(1);
+      }
+   else if(rand>=10)
+       {
+           navigator.vibrate(2000);
+       }
+  alert(result);
+}
+
+function random() {
+  var num = Math.floor(Math.random() * 20);
+  return num;
 }
