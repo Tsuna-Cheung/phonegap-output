@@ -6,6 +6,12 @@ $(document).on("pagecreate","#pageone",function(){
 
 function submitText(){
 	alert(random());
+    if(randow()=='true'){
+        navigator.notification.beep(1);
+    }
+    else {
+        navigator.notification.beep(2);
+    }
     
 }
 function random()
