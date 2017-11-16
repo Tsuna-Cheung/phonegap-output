@@ -6,10 +6,10 @@ $(document).on("pagecreate","#pageone",function(){
 
 function submitText(){
 	alert(random());
-    if(randow()=='true'){
+    if(random().toString=="true"){
         navigator.notification.beep(1);
     }
-    else {
+    else if(random().toString=="false"){
         navigator.notification.beep(2);
     }
     
