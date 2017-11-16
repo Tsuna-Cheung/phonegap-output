@@ -5,11 +5,31 @@ $(document).on("pagecreate","#pageone",function(){
 });            
 
 function submitText(){
-	alert(random());
-    if(random().toString=="true"){
+    
+    var rand = random();
+    
+    console.log(rand);
+    
+	alert(rand);
+    
+    
+    if(rand) {
+         console.log("beeb once");
         navigator.notification.beep(1);
     }
-    else if(random().toString=="false"){
+    else {
+        console.log("beeb twice");
+        navigator.notification.beep(2);
+    }
+    
+    
+    
+    if(rand.toString=="true"){
+        
+        navigator.notification.beep(1);
+    }
+    else if(rand.toString=="false"){
+        console.log("beeb twice");
         navigator.notification.beep(2);
     }
     
