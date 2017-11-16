@@ -22,16 +22,8 @@ function submitText(){
         navigator.notification.beep(2);
     }
     
-    
-    
-    if(rand.toString=="true"){
-        
-        navigator.notification.beep(1);
-    }
-    else if(rand.toString=="false"){
-        console.log("beeb twice");
-        navigator.notification.beep(2);
-    }
+
+   
     
 }
 function random()
